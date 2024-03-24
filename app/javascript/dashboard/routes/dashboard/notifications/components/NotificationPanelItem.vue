@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="w-full">
     <woot-button
       size="expanded"
       color-scheme="secondary"
       variant="link"
+      class="w-full"
       @click="onClickOpenNotification()"
     >
       <div
@@ -56,7 +57,7 @@
           <span
             class="mt-1 text-slate-500 dark:text-slate-400 text-xxs font-semibold flex"
           >
-            {{ dynamicTime(notificationItem.created_at) }}
+            {{ dynamicTime(notificationItem.last_activity_at) }}
           </span>
         </div>
       </div>
